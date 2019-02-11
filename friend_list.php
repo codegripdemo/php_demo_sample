@@ -44,7 +44,7 @@
 	while(($rows=MySQLi_Fetch_Row($count))==True) {
 
 	$query = "select name,email,gender from students where id = $rows[0] ";
-	$result = MySQLi_Query($resid,$query);
+	$result = MySQLi_Query($resid,$query); 
 
 	if($result) {
 
